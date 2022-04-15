@@ -1,0 +1,153 @@
+/* Start Variables  */
+:root{
+    --global-color:#10cab7;
+    --second-color:#5333ed;
+    --Full-stake-color:#c7c7c7;
+    --clear-white-color:#757575;
+    --img-color:#2c4755;
+    --color-head:#ffa61f;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(#c7c7c7 25% , #c7c7c7 74%);
+    font-family: system-ui;
+    
+}
+.clearfix{
+    clear: both;
+}
+/* End Global Rules  */
+
+/* Start Container */
+.container{
+    height: 1150px;
+    width: 800px;
+    background-color: white;
+    box-shadow: 5px 7px 15px 5px #b9b6b6 ;
+    margin:20px auto;
+}
+.top-section{
+    background-color: var(--img-color);
+    text-align: center;
+    padding: 20px;
+
+}
+.profile{
+    width: 150px;
+    border-radius: 50% ;
+}
+.p1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+}
+.p2{
+    color: var(--Full-stake-color);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+}
+.clearfix .col-left .content-box{
+    padding-left: 40px;
+}
+.col-left{
+    width: 35%;
+    float: left;
+}
+.col-right{
+    width: 62%;
+    float: left;
+}
+
+.line{
+    border-left: 2px solid var(--clear-white-color);
+    height: 800px;
+    width: 2%;
+    margin-top: 30px;
+    float: left;
+}
+.col-right .title{
+    font-weight: bold;
+}
+.content-box{
+    padding: 20px;
+}
+.head{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-head);
+}
+.p3{
+    color: var(--clear-white-color);
+    margin-bottom: -5px;
+}
+.p3 i{
+    color: #151b29;
+}
+
+.skills{
+    margin-left: -20px;
+    margin-bottom: 0px;
+}
+.skills li{
+    padding: 5px;
+}
+.skills li span{
+    color: var(--clear-white-color);
+}
+.p-4{
+    font-size: 14px;
+    color: var(--clear-white-color);
+}
+/* End Container */
+/* Start Accesibility(Responsive) */
+@media screen and (max-width: 480px) {
+    .container {
+      height: 1400px;
+      width: 400px;
+    }
+    .p1{
+        font-size: 30px;
+    }
+    .clearfix .col-left .content-box{
+        padding-left: 20px;
+  }
+  .line{
+    height: 980px;
+  }
+  .head{
+    font-size: 18px;
+    font-weight: 600;
+  }
+ .size-media {
+      font-size: 10px;
+      margin-left: -8px;
+  }
+ .size-media .p3 .fa-brands{
+      font-size: 14px;
+  }
+  .skills li{
+    padding: 5px 0;
+  }
+  .content-box  .media-para .p3{
+      font-size: 15px;
+      color: var(--clear-white-color);
+      margin-bottom: -5px;
+  }
+  .p-4{
+    font-size: 15px;
+  }
+
+
+}
+/* End Accesibility(Responsive) */
